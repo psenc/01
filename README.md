@@ -29,4 +29,3 @@
     paramiko: 2.12.0;
     getpass4: 0.0.14.0;
     pyinstaller: 5.7.0.
-
