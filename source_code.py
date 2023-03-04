@@ -221,14 +221,14 @@ def file():
         print("command.txt文件不存在")
         Path.touch(command_path, mode=666)
 
-        if not (device_ip_path.is_file()):
-            print("device.ip.txt不存在")
-            Path.touch(device_ip_path)
+    if not (device_ip_path.is_file()):
+        print("device.ip.txt不存在")
+        Path.touch(device_ip_path)
 
-            if not (collect_info_path.is_dir()):
-                print("collect_info文件夹不存在")
-                Path.mkdir(collect_info_path, mode=666)
-                print("生成的文件需要存放在collect_info文件夹中")
+    if not (collect_info_path.is_dir()):
+        print("collect_info文件夹不存在")
+        Path.mkdir(collect_info_path, mode=666)
+        print("生成的文件需要存放在collect_info文件夹中")
     return None
 
 
